@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .containerr {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .containerr h1 {
+    margin: 0;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .containerr p {
+    font-size: 25px;
+    margin: 2px 0;
+  }
+  
+
+  
+  .rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .drop {
+    position: absolute;
+    bottom: 100%;
+    width: 2px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
+
+h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+p {
+    font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+  width: 80%;
+}
+
+.button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.button1 {
+    display: inline-block;
+    margin: 2px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+    width: 20%;
+  }
+
+  .button1:hover {
+    background: #fff;
+    color: #000;
+  }

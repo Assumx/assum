@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Assum</title>
+<style>
+</style>
+</head>
+<body>
+
+<div class="containerr">
+  <h1>Assum</h1>
+  <p>My bio & devices</p><br>
+  <p>Biography:</p>
+  <h2>Hi, I am Assum, I learning html<br> and css at the moment.
+    I also work<br> with 3D objects. I want to learn how<BR> 
+    to make websites myself, as well<br> 
+    as complex 3D objects
+  </h2>
+  <p>My devices:</p>
+  <h2>Mouse: Logitech g pro wireless (35$)<br>Keyboard: Tester68, Outemu silent peach, pbt (60$)<br>
+  Headphones: Logitech g435 (30$)<br>Mousepad: RedSquare 900x400 (10$)<br> 1st monitor:
+  Acer nitro vg271um(260$)<br>2nd monitor: Samsung c27f591(160$)
+  </h2>
+  <a href="file:///K:/vscode/Assumsite/index.html" class="button">Back</a>
+</div>
+<div class="rain" id="rain"></div>
+<div class="drop" id="drop"></div>
+<script>
+  function createRain() {
+    const rainContainer = document.getElementById('rain');
+    for (let i = 0; i < 100; i++) {
+      const drop = document.createElement('div');
+      drop.className = 'drop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = Math.random() * 3.5 + 0.5 + 's';
+      drop.style.animationDelay = Math.random() * 1 + 's';
+      rainContainer.appendChild(drop);
+    }
+  }
+
+  createRain();
+</script>
+
+</body>
+</html>

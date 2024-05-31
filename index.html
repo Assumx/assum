@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Assum</title>
+<style>
+</style>
+</head>
+<body>
+
+<div class="containerr">
+  <h1>Assum</h1>
+  <p>Hi, Im Assum.</p><br>
+  
+  <a href="file:///K:/vscode/Assumsite/biodevices.html/biodevices.html" class="button">My Bio & devices</a>
+  <a href="file:///K:/vscode/Assumsite/contactwithme.html/contactwithme.html" class="button">Contact with me</a>
+</div>
+<div class="rain" id="rain"></div>
+<div class="drop" id="drop"></div>
+<script>
+  function createRain() {
+    const rainContainer = document.getElementById('rain');
+    for (let i = 0; i < 100; i++) {
+      const drop = document.createElement('div');
+      drop.className = 'drop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = Math.random() * 3.5 + 0.5 + 's';
+      drop.style.animationDelay = Math.random() * 1 + 's';
+      rainContainer.appendChild(drop);
+    }
+  }
+
+  createRain();
+</script>
+
+</body>
+</html>
